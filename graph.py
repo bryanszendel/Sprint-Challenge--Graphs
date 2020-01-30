@@ -102,7 +102,7 @@ class Graph:
                 visited.add(room)
         #       For each edge in the room
                 # print('NEIGHBS', self.get_neighbors(room))
-                for next_room in self.get_neighbors(room):
+                for next_room in graph.get_neighbors(room):
         #           Add that edge to the queue/stack
                     print('next_room', next_room)
                     stack.push(next_room)
